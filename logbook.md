@@ -18,4 +18,4 @@ Cybersecurity Course Logbook
 | 16.11.2025 | 1.5        | Access Control: User Role Modification          | Modified JSON to `"roleid":2` and escalated privileges. Learned about insecure direct object reference vulnerabilities (IDOR). |
 
 
-#Total Hours: 27.5
+Total Hours: 27.5
