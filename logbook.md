@@ -1,4 +1,5 @@
 #Cybersecurity Course Logbook
+
 | Date       | Used hours | Subject(s)                                      | Outcome(s)                                                                                                                     |
 | ---------- | ---------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | 25.10.2025 | 2          | Course Navigation Tutorial & My Knowledge Check | Learned course structure and assessed baseline cybersecurity knowledge                                                         |
