@@ -12,10 +12,10 @@ Cybersecurity Course Logbook
 | 10.11.2025 | 1.5        | SQL Injection: WHERE Clause Data Retrieval      | Used `' OR 1=1--` to extract hidden data. Learned how weak input validation exposes database contents.                         |
 | 11.11.2025 | 1.5        | SQL Injection: Login Bypass                     | Logged in without password using `' OR '1'='1--`. Improved understanding of authentication bypass techniques.                  |
 | 12.11.2025 | 1.5        | Authentication: Username Enumeration            | Discovered valid usernames using different server responses. Learned how inconsistent messaging leaks information.             |
-| 13.11.2025 | 1.5        | Authentication: Password Reset Broken Logic     | Reset another user’s password by altering reset-token parameters. Understood importance of secure token validation.            |
+| 13.11.2025 | 1.5        | Authentication: Password Reset Broken Logic     | Reset another user�?Ts password by altering reset-token parameters. Understood importance of secure token validation.            |
 | 14.11.2025 | 1.5        | Authentication: 2FA Simple Bypass               | Bypassed MFA by navigating directly to `/my-account`. Learned how missing backend checks allow full bypasses.                  |
 | 15.11.2025 | 1.5        | Access Control: Unprotected Admin Functionality | Accessed `/admin` directly and deleted user accounts. Learned dangers of missing authorization checks.                         |
 | 16.11.2025 | 1.5        | Access Control: User Role Modification          | Modified JSON to `"roleid":2` and escalated privileges. Learned about insecure direct object reference vulnerabilities (IDOR). |
+| 24.11.2025 | 10         | Booking System Phase 1 Testing                  | Executed manual tests and ZAP scan for the booking system and documented results in reports.                                   |
 
-
-Total Hours: 27.5
+Total Hours: 38
