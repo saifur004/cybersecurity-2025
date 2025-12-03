@@ -95,8 +95,9 @@ Plan for Phase 3 retesting once fixes are deployed
 | -------- | --------- | ----------------------------------------- | ------------------------------------------------------------------------------ | ---------------------------------------- |
 | **F-01** | 🟠 Medium | Missing CSRF protection                   | No CSRF tokens implemented in registration flow                                | ZAP alert: “Absence of Anti-CSRF Tokens” |
 | **F-02** | 🔵 Info   | Security headers partially configured     | Some headers improved but CSRF-related headers missing                         | ZAP scan results                         |
-| **F-03** | 🔵 Info   | Backend depends heavily on form structure | Validation relies heavily on frontend patterns; 
-backend could sanitize further | Manual test observations                 |
+| **F-03** | 🔵 Info   | Backend depends heavily on form structure | Validation relies heavily on frontend patterns; backend could sanitize further | Manual test observations                 |
+
+
 
 Note:
 All major issues from Part 1 (Email validation, password strength, XSS, SQL Injection) are fixed, so they are not repeated here.

@@ -90,6 +90,8 @@ Reduce reliance on browser validation; enforce backend checks
 | 🟠 Medium | Significant issue requiring some conditions to exploit             | Fix soon                 |
 | 🟡 Low    | Minor weakness or configuration issue                              | Fix in development cycle |
 | 🔵 Info   | No direct exploit but helpful for improving security               | Monitor and improve      |
+
+
 4️⃣ Findings
 | ID       | Severity  | Finding                              | Description                                                                     | Evidence / Proof                               |
 | -------- | --------- | ------------------------------------ | ------------------------------------------------------------------------------- | ---------------------------------------------- |
