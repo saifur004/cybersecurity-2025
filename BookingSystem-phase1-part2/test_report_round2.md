@@ -1,6 +1,6 @@
 Booking System – Phase 1 Part 2 Manual Test Report
 1️⃣ Introduction
-Tester(s):
+Tester(s)
 
 Saifur Rahman
 
@@ -8,7 +8,8 @@ Punam Thakuri
 
 Purpose
 
-To verify whether the main security and validation issues found in Part 1 were fixed in the updated Booking System registration functionality. The focus was on improved validation, injection protection, and security headers.
+To verify whether the main security and validation issues found in Part 1 were fixed in the updated Booking System registration functionality.
+Testing focused on improved validation, injection protection, and security headers.
 
 Scope
 
@@ -62,7 +63,10 @@ Password rules enforced by backend logic
 
 2️⃣ Executive Summary
 
-The updated registration page shows strong improvements. Email validation, password rules, XSS filtering, and SQL injection protections are now functioning correctly. However, CSRF protection is still missing and remains the main unresolved issue.
+The updated registration page shows strong improvements.
+Email validation, password validation, XSS filtering, and SQL injection protections now function correctly.
+
+However, CSRF protection is still missing and remains the primary unresolved issue.
 
 Overall risk level: Medium
 
@@ -76,27 +80,31 @@ Ensure all security headers are consistently applied
 
 Add rate limiting to registration requests
 
-Plan for Phase 3 testing after next updates
+Plan for Phase 3 retesting once fixes are deployed
 
 3️⃣ Severity Scale & Definitions
-Severity Level	Description	Recommended Action
-🔴 High	A serious vulnerability that can lead to full system compromise or data breach	Immediate fix required
-🟠 Medium	Significant issue requiring specific user interaction or conditions	Fix ASAP
-🟡 Low	Minor issue or configuration weakness	Fix soon
-🔵 Info	No direct risk but helpful for hardening the system	Monitor and fix in maintenance
+| Severity Level | Description                                                                    | Recommended Action             |
+| -------------- | ------------------------------------------------------------------------------ | ------------------------------ |
+| 🔴 High        | A serious vulnerability that can lead to full system compromise or data breach | Immediate fix required         |
+| 🟠 Medium      | Significant issue requiring specific user interaction or conditions            | Fix ASAP                       |
+| 🟡 Low         | Minor configuration issue or weakness                                          | Fix soon                       |
+| 🔵 Info        | No direct risk but useful for system hardening                                 | Monitor and fix in maintenance |
+
 4️⃣ Findings
-ID	Severity	Finding	Description	Evidence / Proof
-F-01	🟠 Medium	Missing CSRF protection	No CSRF tokens are implemented in the registration flow.	ZAP alert: “Absence of Anti-CSRF Tokens”
-F-02	🔵 Info	Security headers partially configured	Several headers were fixed but CSRF-related protections are still missing.	ZAP scan results
-F-03	🔵 Info	Backend depends heavily on form structure	Input validation depends strongly on frontend patterns; backend could use additional sanitization.	Manual test observations
+| ID       | Severity  | Finding                                   | Description                                                                    | Evidence / Proof                         |
+| -------- | --------- | ----------------------------------------- | ------------------------------------------------------------------------------ | ---------------------------------------- |
+| **F-01** | 🟠 Medium | Missing CSRF protection                   | No CSRF tokens implemented in registration flow                                | ZAP alert: “Absence of Anti-CSRF Tokens” |
+| **F-02** | 🔵 Info   | Security headers partially configured     | Some headers improved but CSRF-related headers missing                         | ZAP scan results                         |
+| **F-03** | 🔵 Info   | Backend depends heavily on form structure | Validation relies heavily on frontend patterns; 
+backend could sanitize further | Manual test observations                 |
 
 Note:
-All major issues from Part 1 (Email validation, Password strength, XSS, SQL Injection) are fixed and therefore not repeated here.
+All major issues from Part 1 (Email validation, password strength, XSS, SQL Injection) are fixed, so they are not repeated here.
 
 5️⃣ OWASP ZAP Test Report (Attachment)
 Purpose
 
-To document automated security scanning performed on Part 2 of the Booking System.
+To document the automated security scan performed with OWASP ZAP on the updated registration page.
 
 Commands used (Target: localhost:8001)
 zap-baseline.py -t http://localhost:8001 -r zap_report_round1.html -J zap_report_round1.json
