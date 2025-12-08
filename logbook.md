@@ -1,3 +1,4 @@
+```markdown
 | Date       | Hours | Activity / Subject                                | Outcome                                                                            |
 |------------|-------|----------------------------------------------------|-------------------------------------------------------------------------------------|
 | 25.10.2025 | 2     | Course Navigation Tutorial & Knowledge Check       | Learned course structure and baseline knowledge.                                    |
@@ -10,10 +11,12 @@
 | 10.11.2025 | 1.5   | SQL Injection: WHERE Clause                        | Retrieved hidden data with `' OR 1=1--`. Learned how weak input validation fails.   |
 | 11.11.2025 | 1.5   | SQL Injection: Login Bypass                        | Logged in without password using `' OR '1'='1--`.                                   |
 | 12.11.2025 | 1.5   | Authentication: Username Enumeration               | Identified valid usernames based on response differences.                           |
-| 13.11.2025 | 1.5   | Authentication: Password Reset Logic Flaw          | Reset another user’s password by modifying token parameters.                        |
+| 13.11.2025 | 1.5   | Authentication: Password Reset Logic Flaw          | Reset another user's password by modifying token parameters.                        |
 | 14.11.2025 | 1.5   | Authentication: 2FA Simple Bypass                  | Bypassed MFA by directly accessing protected pages.                                 |
 | 15.11.2025 | 1.5   | Access Control: Unprotected Admin Functionality    | Accessed `/admin` without authorization and deleted accounts.                       |
 | 16.11.2025 | 1.5   | Access Control: User Role Modification (IDOR)      | Changed `"roleid": 2` in JSON to escalate privileges.                               |
 | 24.11.2025 | 10    | Booking System Testing – Phase 1 (Part 1)          | Manual tests, initial ZAP scanning, and vulnerability documentation.                |
 | 25.11.2025 | 10    | Booking System Testing – Phase 1 (Part 2)          | Completed tests, refined findings, and prepared final Phase 1 testing report.       |
-| **Total**  | **52**| **—**                                              | **Total hours completed in cybersecurity coursework and testing activities.**       |
+| 08.12.2025 | 8     | Booking System Testing – Phase 2                   | Security testing with privilege escalation, XSS/SQLi payload injection, OWASP ZAP interception, password hash extraction and cracking with John the Ripper, and comprehensive vulnerability documentation. |
+| **Total**  | **60**| **—**                                              | **Total hours completed in cybersecurity coursework and testing activities.**       |
+```
