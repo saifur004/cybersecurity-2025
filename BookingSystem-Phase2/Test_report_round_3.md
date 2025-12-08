@@ -1,6 +1,6 @@
 # Booking System – Phase 2 Manual Test Report
 
-**Tester:** Saifur Rahman  
+**Tester:** Saifur Rahman  , Punam Shahi Thakuri
 **Date:** 12.12.2025  
 **Environment:** Windows (Browser: Firefox), Kali Linux (Password cracking), Docker Backend
 
@@ -400,6 +400,6 @@ Phase 2 of the Booking System contains **multiple severe vulnerabilities**, incl
 ---
 Report file (GitHub link)
 
-📁 ZAP Report: 
+📁 ZAP Report: https://github.com/saifur004/cybersecurity-2025/blob/main/BookingSystem-Phase2/zap_report_round3.md
 
 **End of Report**
