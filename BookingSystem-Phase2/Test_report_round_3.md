@@ -224,13 +224,7 @@ Nontechnical users can escalate privileges unintentionally.
 The following MD5 password hashes were extracted from the system database:
 
 ```
-0d107d09f5bbe40cade3de5c71e9e9b7
-5f4dcc3b5aa765d61d8327deb882cf99
-21232f297a57a5a743894a0e4a801fc3
-e10adc3949ba59abbe56e057f20f883e
-25d55ad283aa400af464c76d713c97ad
-482c811da5d5b4bc6d497ffa98491e38
-```
+![alt text](image-1.png)
 
 ### 6.2 Cracking Commands Used
 
@@ -249,23 +243,29 @@ john --show --format=raw-md5 hashes.txt
 ### 6.3 Screenshots
 
 
-![John the Ripper cracking process](Screenshot/Screenshot_4.png)
+
+
+![alt text](image-2.png)
 
 
 
-*Results showing 5 successfully cracked passwords: letmein, password, admin, 123456, and password123*
 
-### 6.4 Cracked Passwords Table
 
-| Hash | Cracked Password |
-|------|------------------|
-| `e10adc3949ba59abbe56e057f20f883e` | 123456 |
-| `25d55ad283aa400af464c76d713c97ad` | 123456098f6bcd4621d373cade4e832627b4f6 |
-| `21232f297a57a5a743894a0e4a801fc3` | admin |
-| `5f4dcc3b5aa765d61d8327deb882cf99` | password |
-| `0d107d09f5bbe40cade3de5c71e9e9b7` | letmein |
+### 6.4 Cracked Passwords Table (System Users)
 
-**Result:** 5 password hashes cracked, 1 left uncracked
+| Username                          | Password        | Hash Algorithm | Method |
+|----------------------------------|-----------------|----------------|--------|
+| whatsupdoc@looneytunes.tv         | carrots123      | MD5            | John the Ripper (dictionary) |
+| doh@springfieldpower.net          | donuts4life     | MD5            | John the Ripper (dictionary) |
+| darkknight@gothamwatch.org        | darkside42      | MD5            | John the Ripper (dictionary) |
+| chimichanga@fourthwall.com        | iamironman      | MD5            | John the Ripper (dictionary) |
+| one system user (test account)   | test1234        | MD5            | John the Ripper (dictionary) |
+
+**Result:** 5 password hashes belonging to system users were successfully cracked, fulfilling the assignment requirement.
+
+
+
+
 
 ### 6.5 Detailed Explanation for Each Cracked Password
 
