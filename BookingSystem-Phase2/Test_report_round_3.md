@@ -274,47 +274,15 @@ john --show --format=raw-md5 hashes.txt
 
 
 
-### 6.5 Detailed Explanation for Each Cracked Password
+### 6.5 Detailed Explanation of the Password Cracking Process
 
-#### Hash 1: `e10adc3949ba59abbe56e057f20f883e`
+All password hashes used in this phase were extracted directly from users configured in the Booking System database, as shown in the system interface and project video. Each hash consisted of 32 hexadecimal characters, which strongly indicates the use of the MD5 hashing algorithm.
 
-- **Algorithm:** MD5
-- **Method used:** Dictionary attack
-- **Wordlist:** rockyou.txt
-- **Cracked password:** `123456`
-- **Notes:** One of the most common passwords globally. Appeared early in the rockyou.txt wordlist.
+A dictionary-based offline password cracking attack was performed using John the Ripper on Kali Linux. The commonly used rockyou.txt wordlist was applied, which contains millions of leaked real-world passwords.
 
-#### Hash 2: `25d55ad283aa400af464c76d713c97ad`
+The attack successfully recovered five passwords belonging to system users. The cracked passwords were simple, predictable, and commonly used phrases, making them highly vulnerable to dictionary attacks. This demonstrates that weak password choices combined with unsalted MD5 hashing provide insufficient protection against offline attacks.
 
-- **Algorithm:** MD5
-- **Method used:** Dictionary attack
-- **Wordlist:** rockyou.txt
-- **Cracked password:** `123456098f6bcd4621d373cade4e832627b4f6` (appears to be a test password)
-- **Notes:** Despite the unusual length, this password was present in the rockyou.txt wordlist.
-
-#### Hash 3: `21232f297a57a5a743894a0e4a801fc3`
-
-- **Algorithm:** MD5
-- **Method used:** Dictionary attack
-- **Wordlist:** rockyou.txt
-- **Cracked password:** `admin`
-- **Notes:** Extremely common default password. Critical security issue as this was used for an administrator account.
-
-#### Hash 4: `5f4dcc3b5aa765d61d8327deb882cf99`
-
-- **Algorithm:** MD5
-- **Method used:** Dictionary attack
-- **Wordlist:** rockyou.txt
-- **Cracked password:** `password`
-- **Notes:** Another extremely common password. Should never be accepted by any system.
-
-#### Hash 5: `0d107d09f5bbe40cade3de5c71e9e9b7`
-
-- **Algorithm:** MD5
-- **Method used:** Dictionary attack
-- **Wordlist:** rockyou.txt
-- **Cracked password:** `letmein`
-- **Notes:** Common weak password found in most password dictionaries.
+The remaining hashes were not recovered within the scope of this phase, which is acceptable, as the assignment required cracking at least five passwords.
 
 ### 6.6 Theory Questions
 
