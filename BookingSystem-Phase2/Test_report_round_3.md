@@ -223,8 +223,15 @@ Nontechnical users can escalate privileges unintentionally.
 
 The following MD5 password hashes were extracted from the system database:
 
-```
+
+
+
 ![alt text](image-1.png)
+
+
+
+
+
 
 ### 6.2 Cracking Commands Used
 
