@@ -1,6 +1,6 @@
 # 🔐 Booking System – Phase 3 Authorization Test Report
 
-**Tester:** Saifur Rahman  
+**Tester:** Saifur Rahman  , Punam Shahi Thakuri
 **Date:** 15.12.2025  
 **Environment:**
 - Windows (Browser: Chrome / Firefox)
